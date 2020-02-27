@@ -1,0 +1,11 @@
+CREATE TABLE occupation (
+Area_id INT PRIMARY KEY NOT NULL,	
+area INT NOT NULL,
+area_title VARCHAR  NOT NULL,
+occ_title VARCHAR(60) NOT NULL,
+tot_emp VARCHAR NOT NULL,
+h_mean VARCHAR NOT NULL,
+a_mean VARCHAR NOT NULL
+);
+
+SELECT * FROM occupation
