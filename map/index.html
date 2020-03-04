@@ -14,6 +14,13 @@
 	<link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 <body style="padding:10px 100px 100px 100px;">
+	<body>
+		<h1> Major Occupations Across the United States and Salaries </h1>
+		<li> Our project looked at the major occupations in the United States; their location quotients along with their hourly and annual average salaries to compare on a state by state basis.
+		Total Employment: Estimated total employment rounded to the nearest 10.
+		Location Quotient: The occupation's share of an area's employment relative to the national average. 
+		 Hourly Salary: Mean hourly wage.
+		 Annual Salary: Mean annual salary.</li>
 	<div style="margin-bottom:10px;" class="choropleth_map_filter">
 		Occupation
 		<select name="occupation" id="occupation">
@@ -41,10 +48,10 @@
 			<option value='transportation_and_material_moving_occupations'>Transportation and Material Moving Occupations</option>
 		</select>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<input type="radio" name="density" id="tot_emp" value="tot_emp" checked /> Total Emp
-		<input type="radio" name="density" id="loc_quotient" value="loc_quotient" /> Loc Quotient
-		<input type="radio" name="density" id="h_mean" value="h_mean" /> H Mean
-		<input type="radio" name="density" id="a_mean" value="a_mean" /> A Mean
+		<input type="radio" name="density" id="tot_emp" value="tot_emp" checked /> Total Employment
+		<input type="radio" name="density" id="loc_quotient" value="loc_quotient" /> Location Quotient
+		<input type="radio" name="density" id="h_mean" value="h_mean" /> Hourly Salary
+		<input type="radio" name="density" id="a_mean" value="a_mean" /> Annual Salary
 	</div>
 	<div id="map"></div>
 	<script type="text/javascript" src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
@@ -54,5 +61,20 @@
 	<script type="text/javascript" src="static/data/us-states.js"></script>
 	<script type="text/javascript" src="static/js/occupations map.js"></script>
 	<script src="https://d3js.org/d3.v5.min.js"></script>
+
+	<div class='my-legend'>
+        <div class='legend-title'>Income Choropleth</div>
+        <div class='legend-scale'>
+          <ul class='legend-labels'>
+            <li><span style='background:rgb(203, 233, 35);'></span>0 - 20%</li>
+            <li><span style='background:rgb(214, 177, 75);'></span>40%</li>
+            <li><span style='background:rgb(207, 149, 116);'></span>60%</li>
+            <li><span style='background:rgb(190, 43, 43);'></span>80%</li>
+          </ul>
+        </div>
+        <div class='legend-source'>Source: <a href="major occupations across us">Name of source</a></div>
+        </div>
+<div style="margin-bottom:10px;" class="choropleth_map_filter">
+
 </body>
 </html>
